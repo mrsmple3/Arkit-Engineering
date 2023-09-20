@@ -1,0 +1,263 @@
+/* !Popup */
+body.lock {
+  overflow: hidden;
+}
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  background-color: #00000050;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup_content {
+  background-color: white;
+  border-radius: 10px;
+  width: 1400px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) scale(0) rotateX(45deg);
+}
+.popup_container {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 10px;
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .popup_content {
+  transform: perspective(600px) scale(1) rotateX(0deg);
+  opacity: 1;
+}
+
+.inputs_e_p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.email_input {
+  border: 1px solid #aaa;
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  height: 3.5em;
+  position: relative;
+  padding: 5px 15px;
+}
+.phone_input {
+  border: 1px solid #aaa;
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  height: 4em;
+  position: relative;
+  padding: 15px 15px;
+}
+.input_e,
+.input_p {
+  position: relative;
+  margin-bottom: 50px;
+}
+.active {
+  border-color: #000000;
+  border-width: 2px;
+}
+.input_e.active {
+  border-color: #000000;
+  border-width: 1px;
+}
+.input_p.active {
+  border-color: #000000;
+  border-width: 1px;
+}
+
+.phone_title,
+.email_title {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+  z-index: -999;
+  padding: 2px;
+  opacity: 0;
+  transition: 0.25s all;
+}
+.error_p,
+.error_e {
+  position: absolute;
+  font-size: 16px;
+  left: 5px;
+  top: 69px;
+  color: red;
+}
+.active_e_p {
+  opacity: 1;
+  top: -10px;
+  left: 16px;
+  font-size: 14px;
+  z-index: 999;
+}
+.popup_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.popup_buttons_item {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #000;
+  transition: all 0.15s;
+}
+.popup_buttons_item:first-child {
+  background-color: #00000050;
+}
+
+/* ! Offer Diagnostic  */
+.diagnostik {
+  padding: 80px 0;
+}
+.diagnostik_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.diagnostic_sub {
+  display: flex;
+  flex-direction: column;
+}
+.diagnostik_b_title {
+  margin-bottom: 15px;
+}
+.benefit_item {
+  margin-bottom: 15px;
+}
+.benefit_item::before {
+  content: "—";
+  margin-right: 7px;
+}
+.benefit_item:last-child {
+  margin-bottom: 0px;
+}
+.diagnostik_img {
+  object-fit: cover;
+  max-width: 100%;
+}
+.dignostik_btn {
+  transition: all 0.15s;
+  border-radius: 3px;
+}
+.dignostik_btn:hover,
+.dignostik_btn:focus {
+  transform: scale(1.05);
+}
+.dignostik_btn:active {
+  opacity: 0.8;
+}
+
+/* !Free  */
+.free_sub {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  max-width: 100%;
+}
+
+/* !About Staff  */
+.staff_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.staff_container img {
+  max-width: 300px;
+}
+.staff_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+}
+
+/* !to send  */
+.send_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tosend_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.tosend_item {
+  max-width: 310px;
+}
+.tosend_item:last-child {
+  max-width: 215px;
+}
+
+@media (max-width: 767px) {
+  .dignostik_btn {
+    padding: 10px 50px;
+    border-radius: 3px;
+  }
+  .diagnostik_container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .free_sub > span {
+    white-space: normal !important;
+  }
+  .staff_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  .staff_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+  }
+}

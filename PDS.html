@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The ingenious portable diagnostic set from Akrit Engineering, is
+    the only diagnostic set that integrates both wireless engine
+    pressure indicator (ELPI) and deflection unit (EDD) into one
+    durable."
+    />
+    <meta
+      name="keywords"
+      content="Wireless, Compact, Measuring instruments, Portable diagnostic set, Performance, Engine diagnostic, Economy Improvement, Lubrication Eco Saver, Fuel Equipment Improver, Engine pressure indicator"
+    />
+    <link rel="stylesheet" href="style/basic.css" />
+    <link rel="stylesheet" href="style/pds.css  " />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <title>Arkit Engineering, Portable Diagnostic Set (ELPI + EDD)</title>
+  </head>
+  <body class="wrapper">
+    <header id="header" class="lock_padding bg_color_header">
+      <div class="header container_2">
+        <a href="Home.html" id="logo">
+          <img src="img/logo.png" alt="LOGO" class="img_logo" />
+          <p class="logo_name color_white text_subtitle">
+            <span>Akrit</span>Engineering
+          </p>
+        </a>
+        <nav>
+          <ul class="navbar">
+            <li class="home_link nav_item color_white text_subtitle">
+              <a href="Home.html">Home</a>
+            </li>
+            <li
+              class="nav_item color_white text_subtitle nav_prodact"
+              style="border-bottom: 1px solid white"
+            >
+              Products
+            </li>
+            <ul class="prodacts bg_color_blue">
+              <li class="prodact color_white text_prodact prodact_measure">
+                Measure Instrument
+              </li>
+              <li class="prodact color_white text_prodact prodact_eco">
+                Economy Improvement
+              </li>
+              <li class="prodact color_white text_prodact prodact_diagnostic">
+                Diagnostic
+              </li>
+            </ul>
+            <ul class="measuring color_white bg_color_blue">
+              <li class="measuring_item">
+                <a href="ELPI.html">Preassure Indicator (ELPI)</a>
+              </li>
+              <li class="measuring_item">
+                <a href="EDD.html">Deflection device (EDD)</a>
+              </li>
+              <li class="measuring_item">
+                <a href="PDS.html">Portable Diagnostic Set (PDS)</a>
+              </li>
+            </ul>
+            <ul class="economy_menu color_white bg_color_blue">
+              <li class="economy_menu_item">
+                <a href="FES.html">Fuel Eco Saver (FES)</a>
+              </li>
+              <li class="economy_menu_item">
+                <a href="FEI.html">Fuel Equipment Improver (FEI)</a>
+              </li>
+              <li class="economy_menu_item">
+                <a href="LES.html">Lubrication Eco Saver(LES)</a>
+              </li>
+            </ul>
+            <li class="contacts_link nav_item color_white text_subtitle">
+              <a href="Contacts.html">Contact us</a>
+            </li>
+            <li class="about_link nav_item color_white text_subtitle">
+              <a href="About.html">About</a>
+            </li>
+          </ul>
+        </nav>
+        <nav id="burger-menu" class="burger-menu color_white text_subtitle">
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li>Products</li>
+            <ul>
+              <li>Measure Instrument</li>
+              <ul>
+                <li><a href="ELPI.html">Preassure Indicator (ELPI)</a></li>
+                <li><a href="EDD.html">Deflection device (EDD)</a></li>
+                <li><a href="PDS.html">Portable Diagnostic Set (PDS)</a></li>
+              </ul>
+              <li>Economy Improvement</li>
+              <ul>
+                <li><a href="FES.html">Fuel Eco Saver (FES)</a></li>
+                <li><a href="FEI.html">Fuel Equipment Improver (FEI)</a></li>
+                <li><a href="LES.html">Fuel Equipment Improver (FEI)</a></li>
+              </ul>
+              <li>Diagnostic</li>
+            </ul>
+            <li><a href="Contacts.html">Contact us</a></li>
+            <li><a href="About.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="contacts">
+          <div class="phone">
+            <img src="img/ph_phone-light.svg" alt="phone" />
+            <a
+              href="tel:tel:+4408703167797"
+              class="phone_sub text_subtitle color_white"
+            >
+              <span class="visible_0">+44 (0) 870-316-7797</span>
+            </a>
+          </div>
+          <div class="email">
+            <img src="img/pepicons-pencil_letter.svg" alt="email" />
+            <a
+              href="mailto:info@akritengineering.com"
+              class="email_sub text_subtitle color_white"
+            >
+              <span class="visible_0"> info@akritengineering.com</span>
+            </a>
+          </div>
+        </div>
+        <!-- Burger menu button -->
+        <button class="burger-menu-button" onclick="toggleBurgerMenu()">
+          <span class="burger-menu-line"></span>
+          <span class="burger-menu-line"></span>
+          <span class="burger-menu-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="popup" class="popup">
+      <div class="popup_container">
+        <div class="popup_content">
+          <div class="inputs_e_p">
+            <div class="input_e">
+              <label for="email" class="email_title">Email</label>
+              <input
+                type="email"
+                id="email_input"
+                name="email"
+                class="email_input"
+                placeholder="Email"
+                onfocus="activateInputs9()"
+                onblur="deactivateInputs9()"
+              />
+              <p id="error_e" class="error_e"></p>
+            </div>
+
+            <div class="input_p">
+              <label for="phone" class="phone_title">What you need</label>
+              <textarea
+                type="text"
+                rows="4"
+                id="phone_input"
+                name="text"
+                class="phone_input"
+                placeholder="What you need..."
+                onfocus="activateInputs10()"
+                onblur="deactivateInputs10()"
+                style="resize: none"
+              >
+              </textarea>
+              <p id="error_p" class="error_p"></p>
+            </div>
+          </div>
+          <div class="popup_buttons">
+            <a
+              id="close"
+              href="#header"
+              class="popup_buttons_item color_black offer_button close_popup"
+              >Close</a
+            >
+            <a
+              id="ok"
+              href=""
+              class="popup_buttons_item color_black offer_button"
+              >Ok</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="m-bottom_150 container_2">
+      <div class="pds_offer bg_color_white border_10 m-bottom_100">
+        <div class="container paddging_big_block">
+          <h2 class="pds_title text_offer_block m-bottom_70">
+            Portable Diagnostic Set (ELPI + EDD)
+          </h2>
+          <div class="pds_container">
+            <div class="img_pds">
+              <img src="img/prod3.png" alt="PDS" class="pds_thumb" />
+            </div>
+            <div class="pds_offer_content">
+              <h4 class="text_title_subtitle">PDS</h4>
+              <p class="text_subtitle">
+                The ingenious portable diagnostic set from Akrit Engineering, is
+                the only diagnostic set that integrates both wireless engine
+                pressure indicator (ELPI) and deflection unit (EDD) into one
+                durable.
+              </p>
+              <a
+                href="#popup"
+                class="popup_link pds_offer_btn offer_button bg_color_yellow color_black text_subtitle"
+              >
+                Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits container m-bottom_100">
+        <h3 class="benefits_title text_title_subtitle m-bottom_70">
+          Our patented technology delivers
+        </h3>
+        <div class="benefit_cards">
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Wireless (know-how) solution (up to 10m range), no long cables are
+              required.
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              <span style="font-weight: 600">Ergonomic, easy to use</span>
+              <span style="padding-left: 10px"
+                >- fast calculation of data (approximately 5 sec).</span
+              >
+              <span style="padding-left: 10px"
+                >- easy to read sensor data even on the opposite side of the
+                open crankcase
+              </span>
+            </p>
+          </div>
+
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Utilises ONE industrial mini-computer (iPC) as the engine pressure
+              indicator ELPI and the crankshaft deflection device, EDD.
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              <span style="font-weight: 600"
+                >Fast data collection saves the time</span
+              >
+              <span style="padding-left: 10px"
+                >- Engine performance takes less than one minute per
+                cylinder.</span
+              >
+              <span style="padding-left: 10px"
+                >- Engine deflection takes less than one minute per
+                cylinder.</span
+              >
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Unique (know-how) TDC finding method. It allows to calculate mean
+              indicated pressure (Pi) and power (Ni) without sensor on the
+              flywheel.
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              <span style="font-weight: 600">Compact</span>
+              <span style="padding-left: 10px; white-space: nowrap" s
+                >- Total weight with for both units: 3 kg.
+              </span>
+              <span style="padding-left: 10px"
+                >- Case size 32 x 26 x 7 cm.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="workflow m-bottom_100 container">
+        <div class="workflow_title">
+          <h3 class="text_title_subtitle">Workflow</h3>
+          <p class="text_subtitle">
+            Watch our video demonstration to see how quick and simple engine
+            performance analysis with the <strong>PDS</strong> is.
+          </p>
+        </div>
+        <iframe
+          class="workflow_video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/aCvCkiHtcto"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="how m-bottom_100 bg_color_black border_10">
+        <div class="how_container container paddging_big_block">
+          <h3 class="how_title text_title_subtitle color_white">
+            How it works
+          </h3>
+          <div class="how_cards">
+            <div class="how_container_4">
+              <div class="how_card_container">
+                <div class="how_card">
+                  <div class="how_num_container">
+                    <div class="how_num bg_color_white text_smallest">1</div>
+                    <p class="how_num_sub text_subtitle color_white">
+                      Connect pressure sensor to the indicator valve.
+                    </p>
+                  </div>
+                  <img src="img/IMG_80421 1.png" alt="" class="how_img" />
+                </div>
+              </div>
+
+              <div class="how_card_container">
+                <div class="how_card">
+                  <div class="how_num_container">
+                    <div class="how_num bg_color_white text_smallest">2</div>
+                    <p class="how_num_sub text_subtitle color_white">
+                      Or fit the EDD sensor between crankshaft webs.
+                    </p>
+                  </div>
+                  <img src="img/edd/Вал.png" alt="" class="how_img" />
+                </div>
+              </div>
+              <div class="how_card_container">
+                <div class="how_card">
+                  <div class="how_num_container">
+                    <div class="how_num bg_color_white text_smallest">3</div>
+                    <p
+                      class="how_num_sub text_subtitle color_white"
+                      style="width: 175px"
+                    >
+                      Collect wireless data on mini-computer (PDA)
+                    </p>
+                  </div>
+                  <img src="img/PDS_minicomputere.png" alt="" class="how_img" />
+                </div>
+              </div>
+              <div class="how_card_container">
+                <div class="how_card">
+                  <div class="how_num_container">
+                    <div class="how_num bg_color_white text_smallest">
+                      <img src="img/akar-icons_check.png" alt="✔" />
+                    </div>
+                    <p class="how_num_sub text_subtitle color_white">
+                      Connect the PDA to PC via USB cable
+                    </p>
+                  </div>
+                  <img
+                    src="img/Fizicheskoe-povrezhdenie-noutbuka.jpg"
+                    alt=""
+                    class="how_img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="how_card_last_container">
+              <div class="how_card_last">
+                <div class="how_num_container">
+                  <div class="how_num bg_color_white text_smallest">
+                    <img src="img/akar-icons_check.png" alt="✔" />
+                  </div>
+                  <p
+                    class="how_num_sub text_subtitle color_white"
+                    style="width: 106px"
+                  >
+                    Import data from a PDA
+                  </p>
+                </div>
+                <img src="img/edd/Frame 42.png" alt="" class="how_img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="technical_data bg_color_white border_10">
+        <div class="technical_container container paddging_big_block">
+          <div class="elpi_edd m-bottom_70">
+            <h4 class="technical_data_title color_black text_title_subtitle">
+              Technical Data
+            </h4>
+            <h4
+              class="technical_data color_blue text_characters"
+              style="font-weight: 700"
+            >
+              ELPI
+            </h4>
+            <h4
+              class="technical_data color_blue text_characters"
+              style="font-weight: 700"
+            >
+              EDD
+            </h4>
+          </div>
+
+          <div class="technical_items">
+            <div class="technical_item">
+              <h5 class="technical_measure text_name_characters">
+                Measuring range
+              </h5>
+              <p
+                class="technical_item_el text_characters"
+                style="margin-right: -235px"
+              >
+                <span>0-25 MPA (250 bar)</span>
+              </p>
+              <p class="technical_item_el text_characters">
+                <span>100 - 800 mm</span>
+                (distance between crankshaft webs)
+              </p>
+            </div>
+            <div class="technical_item">
+              <h5 class="text_name_characters">Accuracy</h5>
+              <p
+                class="technical_item_el text_characters"
+                style="margin-right: -288px"
+              >
+                < 1.0 % fs
+              </p>
+              <p class="technical_item_el text_characters">
+                0.01 mm. or 0.001 mm.
+              </p>
+            </div>
+            <div class="technical_item">
+              <h5 class="text_name_characters">Wireless range</h5>
+              <p
+                class="technical_item_el text_characters"
+                style="margin-right: -90px"
+              >
+                10 m
+              </p>
+              <p class="technical_item_el text_characters">3 m</p>
+            </div>
+
+            <div class="technical_item">
+              <h5 class="text_name_characters">Power</h5>
+              <p
+                class="technical_item_el text_characters"
+                style="margin-right: -210px"
+              >
+                <span>Rechargeable battery</span>
+              </p>
+              <p class="technical_item_el text_characters">
+                <span>Rechargeable battery</span>
+              </p>
+            </div>
+
+            <div class="technical_item">
+              <h5 class="text_name_characters">Weight with sensor</h5>
+              <p
+                class="technical_item_el text_characters"
+                style="margin-right: -60px"
+              >
+                500 g
+              </p>
+              <p class="technical_item_el text_characters">450 g</p>
+            </div>
+            <div class="technical_item">
+              <h5 class="text_name_characters">Case</h5>
+              <p class="technical_item_el text_characters">
+                <span>One case for both ELPI and EDD, size 32 x 26 x 7 cm</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg_color_black">
+      <div class="footer container">
+        <div class="footer-top">
+          <div class="phone">
+            <img src="img/ph_phone-light.svg" alt="phone" />
+            <a
+              href="tel:+4408703167797"
+              class="phone_sub text_subtitle color_white visible_0"
+            >
+              +44 (0) 870-316-7797
+            </a>
+          </div>
+          <div class="footer_logo">
+            <img src="img/logo.png" alt="Logo" class="logo_img" />
+            <p class="waranty color_white text_footer">
+              Copyright 2010 Akrit Engineering
+            </p>
+          </div>
+          <div class="email">
+            <img src="img/pepicons-pencil_letter.svg" alt="email" />
+            <a
+              href="mailto:info@akritengineering.com"
+              class="email_sub text_subtitle color_white visible_0"
+            >
+              info@akritengineering.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script/basic.js"></script>
+  </body>
+</html>

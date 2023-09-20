@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <meta
+      name="description"
+      content="At Akrit Engineering, we provide reliable solutions to boost your
+    engine performance. Our products and expertise ensure precise,
+    dependable, and long-lasting results."
+    />
+    <meta
+      name="keywords"
+      content="Wireless, Compact, Measuring instruments, Portable diagnostic set, Performance, Engine diagnostic, Economy Improvement, Lubrication Eco Saver, Fuel Equipment Improver, Engine pressure indicator"
+    />
+    <link rel="stylesheet" href="style/basic.css" />
+    <link rel="stylesheet" href="style/main_page.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <title>Arkit Engineering</title>
+  </head>
+  <body class="wrapper">
+    <header id="header" class="lock_padding bg_color_header">
+      <div class="header container_2">
+        <a href="Home.html" id="logo">
+          <img src="img/logo.png" alt="LOGO" class="img_logo" />
+          <p class="logo_name color_white text_subtitle">
+            <span>Akrit</span>Engineering
+          </p>
+        </a>
+        <nav>
+          <ul class="navbar">
+            <li class="home_link nav_item color_white text_subtitle">
+              <a href="Home.html" style="border-bottom: 1px solid white"
+                >Home</a
+              >
+            </li>
+            <li class="nav_item color_white text_subtitle nav_prodact">
+              Products
+            </li>
+            <ul class="prodacts bg_color_blue">
+              <li class="prodact color_white text_prodact prodact_measure">
+                Measure Instrument
+              </li>
+              <li class="prodact color_white text_prodact prodact_eco">
+                Economy Improvement
+              </li>
+              <li class="prodact color_white text_prodact prodact_diagnostic">
+                Diagnostic
+              </li>
+            </ul>
+            <ul class="measuring color_white bg_color_blue">
+              <li class="measuring_item">
+                <a href="ELPI.html">Preassure Indicator (ELPI)</a>
+              </li>
+              <li class="measuring_item">
+                <a href="EDD.html">Deflection device (EDD)</a>
+              </li>
+              <li class="measuring_item">
+                <a href="PDS.html">Portable Diagnostic Set (PDS)</a>
+              </li>
+            </ul>
+            <ul class="economy_menu color_white bg_color_blue">
+              <li class="economy_menu_item">
+                <a href="FES.html">Fuel Eco Saver (FES)</a>
+              </li>
+              <li class="economy_menu_item">
+                <a href="FEI.html">Fuel Equipment Improver (FEI)</a>
+              </li>
+              <li class="economy_menu_item">
+                <a href="LES.html">Lubrication Eco Saver(LES)</a>
+              </li>
+            </ul>
+            <li class="contacts_link nav_item color_white text_subtitle">
+              <a href="Contacts.html">Contact us</a>
+            </li>
+            <li class="about_link nav_item color_white text_subtitle">
+              <a href="About.html">About</a>
+            </li>
+          </ul>
+        </nav>
+        <nav id="burger-menu" class="burger-menu color_white text_subtitle">
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li>Products</li>
+            <ul>
+              <li>Measure Instrument</li>
+              <ul>
+                <li><a href="ELPI.html">Preassure Indicator (ELPI)</a></li>
+                <li><a href="EDD.html">Deflection device (EDD)</a></li>
+                <li><a href="PDS.html">Portable Diagnostic Set (PDS)</a></li>
+              </ul>
+              <li>Economy Improvement</li>
+              <ul>
+                <li><a href="FES.html">Fuel Eco Saver (FES)</a></li>
+                <li><a href="FEI.html">Fuel Equipment Improver (FEI)</a></li>
+                <li><a href="LES.html">Fuel Equipment Improver (FEI)</a></li>
+              </ul>
+              <li>Diagnostic</li>
+            </ul>
+            <li><a href="Contacts.html">Contact us</a></li>
+            <li><a href="About.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="contacts">
+          <div class="phone">
+            <img src="img/ph_phone-light.svg" alt="phone" />
+            <a
+              href="tel:tel:+4408703167797"
+              class="phone_sub text_subtitle color_white"
+            >
+              <span class="visible_0">+44 (0) 870-316-7797</span>
+            </a>
+          </div>
+          <div class="email">
+            <img src="img/pepicons-pencil_letter.svg" alt="email" />
+            <a
+              href="mailto:info@akritengineering.com"
+              class="email_sub text_subtitle color_white"
+            >
+              <span class="visible_0"> info@akritengineering.com</span>
+            </a>
+          </div>
+        </div>
+        <!-- Burger menu button -->
+        <button class="burger-menu-button" onclick="toggleBurgerMenu()">
+          <span class="burger-menu-line"></span>
+          <span class="burger-menu-line"></span>
+          <span class="burger-menu-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="popup" class="popup">
+      <div class="popup_container">
+        <div class="popup_content">
+          <div class="inputs_e_p">
+            <div class="input_e">
+              <label for="email" class="email_title">Email</label>
+              <input
+                type="email"
+                id="email_input"
+                name="email"
+                class="email_input"
+                placeholder="Email"
+                onfocus="activateInputs9()"
+                onblur="deactivateInputs9()"
+              />
+              <p id="error_e" class="error_e"></p>
+            </div>
+
+            <div class="input_p">
+              <label for="phone" class="phone_title">What you need</label>
+              <textarea
+                type="text"
+                rows="4"
+                id="phone_input"
+                name="text"
+                class="phone_input"
+                placeholder="What you need..."
+                onfocus="activateInputs10()"
+                onblur="deactivateInputs10()"
+                style="resize: none"
+              >
+              </textarea>
+              <p id="error_p" class="error_p"></p>
+            </div>
+          </div>
+          <div class="popup_buttons">
+            <a
+              id="close"
+              href="#header"
+              class="popup_buttons_item color_black offer_button close_popup"
+              >Close</a
+            >
+            <a
+              id="ok"
+              href=""
+              class="popup_buttons_item color_black offer_button"
+              >Ok</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="m-bottom_150 container_2">
+      <div class="first_block border_10 bg_color_blue m-bottom_100">
+        <div class="f_b_content container">
+          <div class="offer">
+            <h1 class="offer_title color_white text_offer_title">
+              Discover easy and efficient solutions to boost the power of your
+              engine!
+            </h1>
+            <p class="offer_sub text_subtitle color_white">
+              At Akrit Engineering, we provide reliable solutions to boost your
+              engine performance. Our products and expertise ensure precise,
+              dependable, and long-lasting results.
+            </p>
+            <a
+              href="#popup"
+              class="popup_link offer_btn bg_color_white color_black text_subtitle"
+            >
+              Order
+            </a>
+          </div>
+          <div class="f_b_img">
+            <img src="img/img6.png.png" alt="Keys" class="f_b_keys" />
+          </div>
+        </div>
+      </div>
+
+      <div class="elpi container m-bottom_100">
+        <h2 class="text_title_subtitle m-bottom_70">
+          Wireless and Compact Measuring instruments
+        </h2>
+        <div class="elpi_cards">
+          <div class="elpi_card bg_color_white border_10">
+            <div class="center_column">
+              <h3 class="card_title text_card_title">
+                Pressure measurement <span>device(ELPI)</span>
+              </h3>
+              <img src="img/prod12.png" alt="ELPI1" class="card_img" />
+            </div>
+            <p class="card_sub text_subtitle">
+              The ELPI is a compact, patented electronic pressure measurement
+              device.
+            </p>
+            <div class="button_el">
+              <a
+                href="#popup"
+                class="popup_link button_elpi border_3 bg_color_yellow text_smallest"
+              >
+                Order
+              </a>
+              <a href="ELPI.html" class="btn_vtoros">Learn more</a>
+            </div>
+          </div>
+          <div class="elpi_card bg_color_white border_10">
+            <div class="center_column">
+              <h3 class="card_title text_card_title">
+                Crankshaft deflection <span>device(EDD)</span>
+              </h3>
+              <img src="img/prod2.png" alt="ELPI1" class="card_img" />
+            </div>
+            <p class="card_sub text_subtitle">
+              This compact electronic device has been specifically designed to
+              measure crankshaft deflections both quickly and accurately.
+            </p>
+            <div class="button_el">
+              <a
+                href="#popup"
+                class="popup_link button_elpi border_3 bg_color_yellow text_smallest"
+              >
+                Order
+              </a>
+              <a href="EDD.html" class="btn_vtoros">Learn more</a>
+            </div>
+          </div>
+          <div class="elpi_card bg_color_white border_10">
+            <div class="center_column">
+              <h3 class="card_title text_card_title">
+                Portable diagnostic set<span>(PDS)</span>
+              </h3>
+              <img src="img/prod3.png" alt="ELPI1" class="card_img" />
+            </div>
+            <p class="card_sub text_subtitle">
+              The only diagnostic set that integrates both wireless engine
+              (ELPI) and (EDD) into one durable, easy-to-use instrument.
+            </p>
+            <div class="button_el">
+              <a
+                href="#popup"
+                class="popup_link button_elpi border_3 bg_color_yellow text_smallest"
+              >
+                Order
+              </a>
+              <a href="PDS.html" class="btn_vtoros">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="diagnostik bg_color_blue border_10 m-bottom_100">
+        <div class="diagnostik_container container">
+          <div class="contents">
+            <h2 class="text_title_subtitle color_white">
+              Diagnostic by Performance
+            </h2>
+            <p class="diagnostic_sub text_subtitle color_white">
+              We are delighted to present you our new engine
+              <span>diagnostic service by performance analysis.</span>
+            </p>
+            <div class="diagnostik_benefits">
+              <h3 class="diagnostik_b_title color_white text_card_title">
+                The service provides engine diagnostic informations:
+              </h3>
+              <ul class="benefits">
+                <li class="benefit_item color_white text_smallest">
+                  Whether the indicator valve is partly blocked.
+                </li>
+                <li class="benefit_item color_white text_smallest">
+                  Exhaust valve leakage.
+                </li>
+                <li class="benefit_item color_white text_smallest">
+                  Fuel injector malfunction.
+                </li>
+                <li class="benefit_item color_white text_smallest">
+                  High pressure fuel pump malfunction.
+                </li>
+              </ul>
+            </div>
+            <a
+              href="Diagnostic.html"
+              class="dignostik_btn bg_color_white color_black text_subtitle"
+            >
+              Learn more
+            </a>
+          </div>
+          <div class="diagnostic_thumb">
+            <img
+              src="img/Diagnostic_img_home.png"
+              alt="Diagnosis"
+              class="diagnostik_img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="economy container m-bottom_100">
+        <h2 class="text_title_subtitle m-bottom_70">Economy Improvement</h2>
+        <div class="economy_cards">
+          <div class="economy_card bg_color_white border_10">
+            <div class="center_column">
+              <h3 class="card_title text_card_title m-bottom_50">
+                Fuel Eco Sarver(FES)
+              </h3>
+              <img
+                src="img/fes_2.png"
+                alt="ELPI1"
+                class="card_img"
+                style="object-fit: contain"
+              />
+            </div>
+            <p class="card_sub text_subtitle">
+              Saves 5-10% fuel oil, reduces emissions, for engines and boilers.
+            </p>
+            <div class="button_el">
+              <a
+                href="#popup"
+                class="popup_link button_elpi border_3 bg_color_yellow text_subtitle"
+              >
+                Order
+              </a>
+              <a href="FES.html" class="btn_vtoros">Learn more</a>
+            </div>
+          </div>
+          <div class="economy_card bg_color_white border_10">
+            <div class="center_column">
+              <h3 class="card_title text_card_title">
+                Lubrication Eco <span>Saver(LES)</span>
+              </h3>
+              <img src="img/les_2 (1).jpg" alt="ELPI1" class="card_img" />
+            </div>
+            <p class="card_sub text_subtitle">
+              Reduces emissions, saves fuel and lubricant for engines,
+              compressors, and gear machinery.
+            </p>
+            <div class="button_el">
+              <a
+                href="#popup"
+                class="popup_link button_elpi border_3 bg_color_yellow text_smallest"
+              >
+                Order
+              </a>
+              <a href="LES.html" class="btn_vtoros">Learn more</a>
+            </div>
+          </div>
+          <div class="economy_card bg_color_white border_10">
+            <div class="center_column">
+              <h3 class="card_title text_card_title">
+                Fuel Equipment <span>Improver(FEI)</span>
+              </h3>
+              <img src="img/fei_2.jpg" alt="ELPI1" class="card_img" />
+            </div>
+            <p class="card_sub text_subtitle">
+              s Enhances performance and lifespan of high-pressure equipment.
+            </p>
+            <div class="button_el">
+              <a
+                href="#popup"
+                class="popup_link button_elpi border_3 bg_color_yellow text_smallest"
+              >
+                Order
+              </a>
+              <a href="FEI.html" class="btn_vtoros">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg_color_black">
+      <div class="footer container">
+        <div class="footer-top">
+          <div class="phone">
+            <img src="img/ph_phone-light.svg" alt="phone" />
+            <a
+              href="tel:+4408703167797"
+              class="phone_sub text_subtitle color_white visible_0"
+            >
+              +44 (0) 870-316-7797
+            </a>
+          </div>
+          <div class="footer_logo">
+            <img src="img/logo.png" alt="Logo" class="logo_img" />
+            <p class="waranty color_white text_footer">
+              Copyright 2010 Akrit Engineering
+            </p>
+          </div>
+          <div class="email">
+            <img src="img/pepicons-pencil_letter.svg" alt="email" />
+            <a
+              href="mailto:info@akritengineering.com"
+              class="email_sub text_subtitle color_white visible_0"
+            >
+              info@akritengineering.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script/home.js"></script>
+    <script src="script/basic.js"></script>
+  </body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="fuel oil savings of 5-10% while lowering emissions and is
+    designed for both engines and boilers. Click here to learn more
+    about this component."
+    />
+    <meta
+      name="keywords"
+      content="Wireless, Compact, Measuring instruments, Portable diagnostic set, Performance, Engine diagnostic, Economy Improvement, Lubrication Eco Saver, Fuel Equipment Improver, Engine pressure indicator"
+    />
+    <link rel="stylesheet" href="style/basic.css" />
+    <link rel="stylesheet" href="style/fes.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <title>Arkit Engineering, Fuel Eco Saver (FES)</title>
+  </head>
+  <body class="wrapper">
+    <header id="header" class="lock_padding bg_color_header">
+      <div class="header container_2">
+        <a href="Home.html" id="logo">
+          <img src="img/logo.png" alt="LOGO" class="img_logo" />
+          <p class="logo_name color_white text_subtitle">
+            <span>Akrit</span>Engineering
+          </p>
+        </a>
+        <nav>
+          <ul class="navbar">
+            <li class="home_link nav_item color_white text_subtitle">
+              <a href="Home.html">Home</a>
+            </li>
+            <li
+              class="nav_item color_white text_subtitle nav_prodact"
+              style="border-bottom: 1px solid white"
+            >
+              Products
+            </li>
+            <ul class="prodacts bg_color_blue">
+              <li class="prodact color_white text_prodact prodact_measure">
+                Measure Instrument
+              </li>
+              <li class="prodact color_white text_prodact prodact_eco">
+                Economy Improvement
+              </li>
+              <li class="prodact color_white text_prodact prodact_diagnostic">
+                Diagnostic
+              </li>
+            </ul>
+            <ul class="measuring color_white bg_color_blue">
+              <li class="measuring_item">
+                <a href="ELPI.html">Preassure Indicator</a>
+              </li>
+              <li class="measuring_item">
+                <a href="EDD.html">Deflection device</a>
+              </li>
+              <li class="measuring_item">
+                <a href="PDS.html">Portable Diagnostic Set</a>
+              </li>
+            </ul>
+            <ul class="economy_menu color_white bg_color_blue">
+              <li class="economy_menu_item">
+                <a href="FES.html">Fuel Eco Saver</a>
+              </li>
+              <li class="economy_menu_item">
+                <a href="FEI.html">Fuel Equipment Improver</a>
+              </li>
+              <li class="economy_menu_item">
+                <a href="LES.html">Lubrication Eco Saver</a>
+              </li>
+            </ul>
+            <li class="contacts_link nav_item color_white text_subtitle">
+              <a href="Contacts.html">Contact us</a>
+            </li>
+            <li class="about_link nav_item color_white text_subtitle">
+              <a href="About.html">About us</a>
+            </li>
+          </ul>
+        </nav>
+        <nav id="burger-menu" class="burger-menu color_white text_subtitle">
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li>Products</li>
+            <ul>
+              <li>Measure Instrument</li>
+              <ul>
+                <li><a href="ELPI.html">ELPI</a></li>
+                <li><a href="EDD.html">EDD</a></li>
+                <li><a href="PDS.html">PDS</a></li>
+              </ul>
+              <li>Economy Improvement</li>
+              <ul>
+                <li><a href="FES.html">FES</a></li>
+                <li><a href="FEI.html">FEI</a></li>
+                <li><a href="LES.html">LES</a></li>
+              </ul>
+              <li>Diagnostic</li>
+            </ul>
+            <li><a href="Contacts.html">Contact us</a></li>
+            <li><a href="About.html">About us</a></li>
+          </ul>
+        </nav>
+
+        <div class="contacts">
+          <div class="phone">
+            <img src="img/ph_phone-light.svg" alt="phone" />
+            <a
+              href="tel:tel:+4408703167797"
+              class="phone_sub text_subtitle color_white"
+            >
+              <span class="visible_0">+44 (0) 870-316-7797</span>
+            </a>
+          </div>
+          <div class="email">
+            <img src="img/pepicons-pencil_letter.svg" alt="email" />
+            <a
+              href="mailto:info@akritengineering.com"
+              class="email_sub text_subtitle color_white"
+            >
+              <span class="visible_0"> info@akritengineering.com</span>
+            </a>
+          </div>
+        </div>
+        <!-- Burger menu button -->
+        <button class="burger-menu-button" onclick="toggleBurgerMenu()">
+          <span class="burger-menu-line"></span>
+          <span class="burger-menu-line"></span>
+          <span class="burger-menu-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="popup" class="popup">
+      <div class="popup_container">
+        <div class="popup_content">
+          <div class="inputs_e_p">
+            <div class="input_e">
+              <label for="email" class="email_title">Email</label>
+              <input
+                type="email"
+                id="email_input"
+                name="email"
+                class="email_input"
+                placeholder="Email"
+                onfocus="activateInputs9()"
+                onblur="deactivateInputs9()"
+              />
+              <p id="error_e" class="error_e"></p>
+            </div>
+
+            <div class="input_p">
+              <label for="phone" class="phone_title">What you need</label>
+              <textarea
+                type="text"
+                rows="4"
+                id="phone_input"
+                name="text"
+                class="phone_input"
+                placeholder="What you need..."
+                onfocus="activateInputs10()"
+                onblur="deactivateInputs10()"
+                style="resize: none"
+              >
+              </textarea>
+              <p id="error_p" class="error_p"></p>
+            </div>
+          </div>
+          <div class="popup_buttons">
+            <a
+              id="close"
+              href="#header"
+              class="popup_buttons_item color_black offer_button close_popup"
+              >Close</a
+            >
+            <a
+              id="ok"
+              href=""
+              class="popup_buttons_item color_black offer_button"
+              >Ok</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="m-bottom_150 container_2">
+      <div class="fes_offer border_10 bg_color_white m-bottom_100">
+        <div class="container paddging_big_block">
+          <h2 class="fes_title text_offer_block m-bottom_70">Fuel Eco Saver</h2>
+          <div class="fes_container">
+            <div class="img_fes">
+              <img
+                src="img/Economy improvement/fes_1.png"
+                alt="FES"
+                class="fes_thumb"
+              />
+            </div>
+            <div class="fes_offer_content">
+              <h4 class="text_title_subtitle">FES</h4>
+              <p class="fes_offer_sub text_subtitle">
+                Offers fuel oil savings of 5-10% while lowering emissions and is
+                designed for both engines and boilers. Click here to learn more
+                about this component.
+              </p>
+              <a
+                href="#popup"
+                class="popup_link fes_offer_btn offer_button bg_color_blue color_white text_subtitle"
+              >
+                Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about container color_black m-bottom_100">
+        <h3 class="text_title_subtitle">About staff</h3>
+        <p class="about_sub text_subtitle">
+          <span
+            >A highly efficient solution that works for both boilers and engines
+            is called Fuel Eco Saver (FES).
+          </span>
+          <span>
+            FES is a cutting-edge fuel oil treatment that works as a carbon
+            catalyst, smoke suppressant, and combustion enhancer for two- and
+            four-stroke engines as well as boilers. Heavy fuel and diesel both
+            work well with it. FES is installed on a fuel line before engine or
+            boiler. It drastically cuts fuel oil consumption by 5 to 10%.
+          </span>
+
+          <span>
+            For newer engines in good condition, using FES can result in fuel
+            savings of about 5%, while older engines frequently see even greater
+            improvements. The typical fuel economy gain for boilers is around
+            10%.
+          </span>
+          <span
+            >FES not only reduces fuel consumption but also emissions (CO and
+            NOx) by about 15%, which lowers maintenance and component costs by
+            at least 15% .</span
+          >
+          <strong
+            >The projected payback period for FES is less than a year, which
+            represents a fantastic return on investment.</strong
+          >
+        </p>
+      </div>
+
+      <div class="benefits container m-bottom_100">
+        <h3 class="benefits_title text_title_subtitle m-bottom_70">
+          Key benefits of using FES include
+        </h3>
+        <div class="benefit_cards">
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Reduced unburned fuel and improved combustion efficiency.
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Сleaning and maintaining the exhaust valves, injectors,
+              turbochargers, and piston rings.
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Preventing combustion deposits in the combustion chambers of
+              boilers and engines.
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Less smoke being released.
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Reduced exhaust temperature increased exhaust valve lifespan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="how m-bottom_100 bg_color_white border_10">
+        <div class="how_container container paddging_big_block">
+          <h3 class="how_title text_title_subtitle color_black">
+            How it works
+          </h3>
+          <img
+            src="img/Economy improvement/howitworks FES.png"
+            alt="How it work"
+          />
+        </div>
+      </div>
+
+      <div class="technical_data bg_color_white border_10">
+        <div class="technical_container container paddging_big_block">
+          <h4
+            class="technical_data_title color_black text_title_subtitle m-bottom_70"
+          >
+            Technical Data
+          </h4>
+          <img
+            src="img/Economy improvement/fes_3.jpg"
+            alt="plan"
+            class="technical_img m-bottom_30 border_3"
+          />
+          <div class="technical_items">
+            <div class="technical_item">
+              <h5 class="text_name_characters">
+                Dimensions, <span style="font-weight: 500">(mm)</span>
+              </h5>
+              <p class="technical_item_el text_characters">
+                <span
+                  ><strong>A</strong> = 440-630, <strong>B</strong> =
+                  60-80</span
+                >
+                <span
+                  ><strong>C</strong> = 80-100, <strong>D</strong> = 40-60</span
+                >
+                <span
+                  ><strong>E</strong> = 120-160, <strong>E</strong> =
+                  40-60</span
+                >
+              </p>
+            </div>
+            <div class="technical_item">
+              <h5 class="text_name_characters">Accuracy</h5>
+              <p class="technical_item_el text_characters">&lt; 1.0 % fs</p>
+            </div>
+            <div class="technical_item">
+              <h5 class="text_name_characters">Working fuel pressure</h5>
+              <p class="technical_item_el text_characters">0-30 bar</p>
+            </div>
+            <div class="technical_item">
+              <h5 class="text_name_characters">Current</h5>
+              <p class="technical_item_el text_characters">0.4A</p>
+            </div>
+            <div class="technical_item">
+              <h5 class="text_name_characters">Power supply</h5>
+              <p class="technical_item_el text_characters">24V DC</p>
+            </div>
+            <div class="technical_item">
+              <h5 class="text_name_characters">Weight with sensor</h5>
+              <p class="technical_item_el text_characters">3-7 kg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg_color_black">
+      <div class="footer container">
+        <div class="footer-top">
+          <div class="phone">
+            <img src="img/ph_phone-light.svg" alt="phone" />
+            <a
+              href="tel:+4408703167797"
+              class="phone_sub text_subtitle color_white visible_0"
+            >
+              +44 (0) 870-316-7797
+            </a>
+          </div>
+          <div class="footer_logo">
+            <img src="img/logo.png" alt="Logo" class="logo_img" />
+            <p class="waranty color_white text_footer">
+              Copyright 2010 Akrit Engineering
+            </p>
+          </div>
+          <div class="email">
+            <img src="img/pepicons-pencil_letter.svg" alt="email" />
+            <a
+              href="mailto:info@akritengineering.com"
+              class="email_sub text_subtitle color_white visible_0"
+            >
+              info@akritengineering.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script/basic.js"></script>
+  </body>
+</html>

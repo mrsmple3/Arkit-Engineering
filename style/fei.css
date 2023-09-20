@@ -1,0 +1,406 @@
+/* !Popup */
+body.lock {
+  overflow: hidden;
+}
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  z-index: 9999;
+  background-color: #00000050;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup_content {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 800px;
+  padding: 80px 50px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) scale(0) rotateX(45deg);
+}
+.popup_container {
+  max-width: 100%;
+  min-height: 100%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .popup_content {
+  transform: perspective(600px) scale(1) rotateX(0deg);
+
+  opacity: 1;
+}
+.inputs_e_p {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input_e,
+.input_p {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+.email_input {
+  width: 600px;
+  border: 1px solid #aaa;
+  margin: 0 auto;
+  border-radius: 5px;
+  height: 3.5em;
+  position: relative;
+  padding: 5px 15px;
+}
+.phone_input {
+  width: 600px;
+  border: 1px solid #aaa;
+  margin: 0 auto;
+  border-radius: 5px;
+  height: 4em;
+  position: relative;
+  padding: 15px 15px;
+}
+
+.active {
+  border-color: #000000;
+  border-width: 2px;
+}
+.input_e.active {
+  border-color: #000000;
+  border-width: 1px;
+}
+.input_p.active {
+  border-color: #000000;
+  border-width: 1px;
+}
+
+.phone_title,
+.email_title {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+  z-index: -999;
+  padding: 2px;
+  opacity: 0;
+  transition: 0.25s all;
+}
+.error_p,
+.error_e {
+  position: absolute;
+  font-size: 16px;
+  left: 5px;
+  top: 69px;
+  color: red;
+}
+.active_e_p {
+  opacity: 1;
+  top: -10px;
+  left: 16px;
+  font-size: 14px;
+  z-index: 999;
+}
+.popup_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.popup_buttons_item {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #000;
+  transition: all 0.15s;
+}
+.popup_buttons_item:first-child {
+  background-color: #00000050;
+}
+
+/* ! offer  */
+.fei_offer {
+  position: relative;
+  background-position: bottom right;
+}
+.fei_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.fei_thumb {
+  max-width: 270px;
+}
+.fei_offer_content {
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.fei_offer_btn {
+  transition: all 0.15s;
+}
+.fei_offer_btn:hover,
+.fei_offer_btn:focus {
+  transform: scale(1.05) !important;
+}
+.fei_offer_btn:active {
+  opacity: 0.8;
+}
+/* !About staff */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 70px;
+}
+.about_sub {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/* ! benefits  */
+.benefit_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 120px;
+  grid-row-gap: 50px;
+}
+
+.benefit_card {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 540px;
+  height: 200px;
+  background: url(/img/ic_outline-miscellaneous-services.png) no-repeat;
+  background-position: center;
+  background-position-x: -40px;
+  background-color: #002d7f;
+}
+.benefit_card:nth-child(2) {
+  background: url(/img/mdi_pipe-leak.png) no-repeat;
+  background-position: center;
+  background-position-x: -40px;
+  background-color: #002d7f;
+}
+.benefit_card:nth-child(3) {
+  background: url(/img/system-uicons_graph-increase.png) no-repeat;
+  background-position: center;
+  background-position-x: -25px;
+  background-color: #002d7f;
+}
+.benefit_card:nth-child(4) {
+  background: url(/img/icon-park-solid_oil-industry.png) no-repeat;
+  background-position: center;
+  background-position-x: -55px;
+  background-color: #002d7f;
+}
+.benefit_sub {
+  max-width: 362px;
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ! How it works  */
+.how_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* !technical Data  */
+.technical_items {
+  display: flex;
+  flex-direction: column;
+}
+.technical_items > * {
+  margin-bottom: 30px;
+}
+
+.technical_items > :last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.technical_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #818181;
+}
+.technical_item_el {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .fei_offer {
+    padding: 10px 50px;
+    border-radius: 3px;
+  }
+  .fei_container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .benefit_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .benefit_card {
+    background: none !important;
+    background-position: center;
+    background-color: #002d7f !important;
+    padding: 30px 30px;
+  }
+  .benefit_card:nth-child(2) {
+    padding: 30px 98px;
+  }
+  .benefit_card:nth-child(4) {
+    padding: 30px 50px;
+  }
+  .benefit_sub {
+    max-width: 362px;
+    margin-left: 0px;
+  }
+  .workflow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .workflow_video {
+    max-width: 100%;
+    height: auto;
+  }
+  .how_container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .how_container img {
+    max-width: 100%;
+  }
+  .how_cards {
+    padding: 15px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+  .how_card {
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    max-width: 380px;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .how_card_container {
+    padding-right: 30px;
+    border-right: none;
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+  }
+  .how_card_container:nth-child(3),
+  .how_card_container:nth-child(4) {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+    padding-top: 0px;
+  }
+  .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .technical_items > * {
+    margin-bottom: 30px;
+  }
+  .technical_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #818181;
+  }
+  .technical_item_el {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    max-width: 150px;
+  }
+  .popup_content {
+    padding: 50px 20px !important;
+  }
+  .email_input {
+    width: 300px;
+    border: 1px solid #aaa;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 3.5em;
+    position: relative;
+    padding: 5px 15px;
+  }
+  .phone_input {
+    width: 300px;
+    border: 1px solid #aaa;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 4em;
+    position: relative;
+    padding: 15px 15px;
+  }
+  .popup_content {
+    max-width: 350px;
+  }
+  .popup_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}

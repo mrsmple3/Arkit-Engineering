@@ -1,0 +1,541 @@
+/* !Popup */
+body.lock {
+  overflow: hidden;
+}
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  z-index: 9999;
+  background-color: #00000050;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease 0s;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup_content {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 800px;
+  padding: 80px 50px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) scale(0) rotateX(45deg);
+}
+.popup_container {
+  max-width: 100%;
+  min-height: 100%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup.open .popup_content {
+  transform: perspective(600px) scale(1) rotateX(0deg);
+
+  opacity: 1;
+}
+.inputs_e_p {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input_e,
+.input_p {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+.email_input {
+  width: 600px;
+  border: 1px solid #aaa;
+  margin: 0 auto;
+  border-radius: 5px;
+  height: 3.5em;
+  position: relative;
+  padding: 5px 15px;
+}
+.phone_input {
+  width: 600px;
+  border: 1px solid #aaa;
+  margin: 0 auto;
+  border-radius: 5px;
+  height: 4em;
+  position: relative;
+  padding: 15px 15px;
+}
+
+.active {
+  border-color: #000000;
+  border-width: 2px;
+}
+.input_e.active {
+  border-color: #000000;
+  border-width: 1px;
+}
+.input_p.active {
+  border-color: #000000;
+  border-width: 1px;
+}
+
+.phone_title,
+.email_title {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+  z-index: -999;
+  padding: 2px;
+  opacity: 0;
+  transition: 0.25s all;
+}
+.error_p,
+.error_e {
+  position: absolute;
+  font-size: 16px;
+  left: 5px;
+  top: 69px;
+  color: red;
+}
+.active_e_p {
+  opacity: 1;
+  top: -10px;
+  left: 16px;
+  font-size: 14px;
+  z-index: 999;
+}
+.popup_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.popup_buttons_item {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #000;
+  transition: all 0.15s;
+}
+.popup_buttons_item:first-child {
+  background-color: #00000050;
+}
+
+/* ! offer  */
+.pds_offer {
+  position: relative;
+}
+.pds_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.pds_thumb {
+  max-width: 270px;
+}
+.pds_offer_content {
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* ! benefits  */
+.benefit_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 120px;
+  grid-row-gap: 50px;
+}
+
+.benefit_card {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 540px;
+  height: 200px;
+  background: url(/img/mdi_wireless.png) no-repeat;
+  background-position: center;
+  background-position-x: -40px;
+  background-color: #002d7f;
+}
+.benefit_card:nth-child(2) {
+  background: url(/img/mdi_fuse.png) no-repeat;
+  background-position: center;
+  background-position-x: -40px;
+  background-color: #002d7f;
+}
+.benefit_card:nth-child(3) {
+  background: url(/img/iPS.png) no-repeat;
+  background-position: center;
+  background-position-x: 0px;
+  background-color: #002d7f;
+}
+.benefit_card:nth-child(4) {
+  background: url(/img/ion_time-outline.png) no-repeat;
+  background-position: center;
+  background-position-x: -55px;
+  background-color: #002d7f;
+}
+.benefit_card:nth-child(5) {
+  background: url(/img/material-symbols_calculate-outline.png) no-repeat;
+  background-position: center;
+  background-position-x: -40px;
+  background-color: #002d7f;
+}
+.benefit_card:nth-child(6) {
+  background: url(/img/compact.png) no-repeat;
+  background-position: center;
+  background-position-x: -25px;
+  background-color: #002d7f;
+}
+.benefit_sub {
+  max-width: 362px;
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* !workflow */
+.workflow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.workflow_title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 495px;
+}
+/* !technical Data  */
+.elpi_edd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.technical_items {
+  display: flex;
+  flex-direction: column;
+}
+.technical_items > * {
+  margin-bottom: 30px;
+}
+
+.technical_items > :last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.technical_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #818181;
+}
+.technical_item_el {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.technical_measure {
+  max-width: 220px;
+}
+/* ! information  */
+.informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ! How it works  */
+.how_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.how_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+.how_container_4 {
+  padding: 15px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.how_card {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+  max-width: 380px;
+  justify-content: space-between;
+  align-items: center;
+}
+.how_card_container {
+  padding-right: 30px;
+  border-right: 1px solid #fff;
+}
+.how_card:nth-child(2),
+.how_card:nth-child(4) {
+  border-right: none;
+  padding-right: 0;
+}
+.how_card_container:nth-child(3) .how_card,
+.how_card_container:nth-child(4) .how_card {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.how_card_last_container {
+  padding: 15px 230px 0 230px;
+  border-top: 1px solid #fff;
+}
+.how_card_last {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+  max-width: 380px;
+  justify-content: space-between;
+  align-items: center;
+}
+.how_card_last .how_img {
+  max-width: 200px;
+}
+.how_card_container:nth-child(2),
+.how_card_container:nth-child(4) {
+  padding-right: 0;
+  border-right: none;
+  padding-left: 30px;
+}
+
+.how_card_container:nth-child(3),
+.how_card_container:nth-child(4) {
+  border-bottom: none;
+  padding-top: 30px;
+}
+
+.how_num_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.how_num {
+  display: flex;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 75px;
+  justify-content: center;
+}
+.how_num_sub {
+  width: 180px;
+}
+.how_img {
+  max-width: 100%;
+}
+.how_card_container:nth-child(3) .how_img {
+  max-width: 144px;
+}
+.how_card_container:nth-child(4) .how_img {
+  max-width: 164px;
+}
+/* !hover  */
+.pds_offer_btn {
+  transition: all 0.15s;
+}
+.pds_offer_btn:hover,
+.pds_offer_btn:focus {
+  transform: scale(1.05);
+}
+.pds_offer_btn:active {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .pds_offer {
+    padding: 10px 50px;
+    border-radius: 3px;
+  }
+  .pds_container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .benefit_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .benefit_card {
+    background: none !important;
+    background-position: center;
+    background-color: #002d7f !important;
+    padding: 30px 30px;
+  }
+  .benefit_sub {
+    max-width: 362px;
+    margin-left: 0px;
+  }
+  .benefit_sub > span {
+    white-space: normal !important;
+  }
+  .workflow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .workflow_video {
+    max-width: 100%;
+    height: auto;
+  }
+  .how_container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .how_card {
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    max-width: 380px;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .how_card_container {
+    padding-right: 30px;
+    border-right: none;
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+  }
+  .how_container_4 {
+    padding: 15px 30px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+  .how_card_container:nth-child(3),
+  .how_card_container:nth-child(4) {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+    padding-top: 0px;
+  }
+  .how_card_last_container {
+    padding: 15px 15px 0px 15px;
+    border-top: 1px solid #fff;
+    border-top: none;
+  }
+  .how_card_last {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    max-width: 380px;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .grafics_items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .grafic_item {
+    max-width: 100%;
+  }
+  .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .technical_items > * {
+    margin-bottom: 30px;
+  }
+  .technical_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #818181;
+    gap: 30px;
+    padding-left: 30px;
+  }
+  .technical_item_el {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 180px;
+    align-items: flex-start;
+  }
+  .popup_content {
+    padding: 50px 20px !important;
+  }
+  .email_input {
+    width: 300px;
+    border: 1px solid #aaa;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 3.5em;
+    position: relative;
+    padding: 5px 15px;
+  }
+  .phone_input {
+    width: 300px;
+    border: 1px solid #aaa;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 4em;
+    position: relative;
+    padding: 15px 15px;
+  }
+  .popup_content {
+    max-width: 350px;
+  }
+  .popup_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}

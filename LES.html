@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" Engines, compressors, and machinery that uses gears and bearings
+    can all benefit from our Lubrication Eco Saver LES. LES reduces
+    emissions while also saving on fuel and lubricant."
+    />
+    <meta
+      name="keywords"
+      content="Wireless, Compact, Measuring instruments, Portable diagnostic set, Performance, Engine diagnostic, Economy Improvement, Lubrication Eco Saver, Fuel Equipment Improver, Engine pressure indicator"
+    />
+    <link rel="stylesheet" href="style/basic.css" />
+    <link rel="stylesheet" href="style/les.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <title>Arkit Engineering, Lubrication Eco Saver (LES)</title>
+  </head>
+  <body class="wrapper">
+    <header id="header" class="lock_padding bg_color_header">
+      <div class="header container_2">
+        <a href="Home.html" id="logo">
+          <img src="img/logo.png" alt="LOGO" class="img_logo" />
+          <p class="logo_name color_white text_subtitle">
+            <span>Akrit</span>Engineering
+          </p>
+        </a>
+        <nav>
+          <ul class="navbar">
+            <li class="home_link nav_item color_white text_subtitle">
+              <a href="Home.html">Home</a>
+            </li>
+            <li
+              class="nav_item color_white text_subtitle nav_prodact"
+              style="border-bottom: 1px solid white"
+            >
+              Products
+            </li>
+            <ul class="prodacts bg_color_blue">
+              <li class="prodact color_white text_prodact prodact_measure">
+                Measure Instrument
+              </li>
+              <li class="prodact color_white text_prodact prodact_eco">
+                Economy Improvement
+              </li>
+              <li class="prodact color_white text_prodact prodact_diagnostic">
+                Diagnostic
+              </li>
+            </ul>
+            <ul class="measuring color_white bg_color_blue">
+              <li class="measuring_item">
+                <a href="ELPI.html">Preassure Indicator (ELPI)</a>
+              </li>
+              <li class="measuring_item">
+                <a href="EDD.html">Deflection device (EDD)</a>
+              </li>
+              <li class="measuring_item">
+                <a href="PDS.html">Portable Diagnostic Set (PDS)</a>
+              </li>
+            </ul>
+            <ul class="economy_menu color_white bg_color_blue">
+              <li class="economy_menu_item">
+                <a href="FES.html">Fuel Eco Saver (FES)</a>
+              </li>
+              <li class="economy_menu_item">
+                <a href="FEI.html">Fuel Equipment Improver (FEI)</a>
+              </li>
+              <li class="economy_menu_item">
+                <a href="LES.html">Lubrication Eco Saver(LES)</a>
+              </li>
+            </ul>
+            <li class="contacts_link nav_item color_white text_subtitle">
+              <a href="Contacts.html">Contact us</a>
+            </li>
+            <li class="about_link nav_item color_white text_subtitle">
+              <a href="About.html">About</a>
+            </li>
+          </ul>
+        </nav>
+        <nav id="burger-menu" class="burger-menu color_white text_subtitle">
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li>Products</li>
+            <ul>
+              <li>Measure Instrument</li>
+              <ul>
+                <li><a href="ELPI.html">Preassure Indicator (ELPI)</a></li>
+                <li><a href="EDD.html">Deflection device (EDD)</a></li>
+                <li><a href="PDS.html">Portable Diagnostic Set (PDS)</a></li>
+              </ul>
+              <li>Economy Improvement</li>
+              <ul>
+                <li><a href="FES.html">Fuel Eco Saver (FES)</a></li>
+                <li><a href="FEI.html">Fuel Equipment Improver (FEI)</a></li>
+                <li><a href="LES.html">Fuel Equipment Improver (FEI)</a></li>
+              </ul>
+              <li>Diagnostic</li>
+            </ul>
+            <li><a href="Contacts.html">Contact us</a></li>
+            <li><a href="About.html">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="contacts">
+          <div class="phone">
+            <img src="img/ph_phone-light.svg" alt="phone" />
+            <a
+              href="tel:tel:+4408703167797"
+              class="phone_sub text_subtitle color_white"
+            >
+              <span class="visible_0">+44 (0) 870-316-7797</span>
+            </a>
+          </div>
+          <div class="email">
+            <img src="img/pepicons-pencil_letter.svg" alt="email" />
+            <a
+              href="mailto:info@akritengineering.com"
+              class="email_sub text_subtitle color_white"
+            >
+              <span class="visible_0"> info@akritengineering.com</span>
+            </a>
+          </div>
+        </div>
+        <!-- Burger menu button -->
+        <button class="burger-menu-button" onclick="toggleBurgerMenu()">
+          <span class="burger-menu-line"></span>
+          <span class="burger-menu-line"></span>
+          <span class="burger-menu-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="popup" class="popup">
+      <div class="popup_container">
+        <div class="popup_content">
+          <div class="inputs_e_p">
+            <div class="input_e">
+              <label for="email" class="email_title">Email</label>
+              <input
+                type="email"
+                id="email_input"
+                name="email"
+                class="email_input"
+                placeholder="Email"
+                onfocus="activateInputs9()"
+                onblur="deactivateInputs9()"
+              />
+              <p id="error_e" class="error_e"></p>
+            </div>
+
+            <div class="input_p">
+              <label for="phone" class="phone_title">What you need</label>
+              <textarea
+                type="text"
+                rows="4"
+                id="phone_input"
+                name="text"
+                class="phone_input"
+                placeholder="What you need..."
+                onfocus="activateInputs10()"
+                onblur="deactivateInputs10()"
+                style="resize: none"
+              >
+              </textarea>
+              <p id="error_p" class="error_p"></p>
+            </div>
+          </div>
+          <div class="popup_buttons">
+            <a
+              id="close"
+              href="#header"
+              class="popup_buttons_item color_black offer_button close_popup"
+              >Close</a
+            >
+            <a
+              id="ok"
+              href=""
+              class="popup_buttons_item color_black offer_button"
+              >Ok</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="m-bottom_150 container_2">
+      <div class="les_offer border_10 bg_color_white m-bottom_100">
+        <div class="container paddging_big_block">
+          <h2 class="les_title text_offer_block m-bottom_70">
+            Lubrication Eco Saver
+          </h2>
+          <div class="les_container">
+            <div class="img_les">
+              <img
+                src="img/Economy improvement/les_1.jpg"
+                alt="les"
+                class="les_thumb"
+              />
+            </div>
+            <div class="les_offer_content">
+              <h4 class="text_title_subtitle">LES</h4>
+              <p class="les_offer_sub text_subtitle">
+                Engines, compressors, and machinery that uses gears and bearings
+                can all benefit from our Lubrication Eco Saver LES. LES reduces
+                emissions while also saving on fuel and lubricant.
+              </p>
+              <a
+                href="#popup"
+                class="popup_link les_offer_btn offer_button bg_color_blue color_white text_subtitle"
+              >
+                Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about container color_black m-bottom_100">
+        <h3 class="text_title_subtitle">About staff</h3>
+        <p class="about_sub text_subtitle">
+          <span
+            >Lubrication Eco Saver (LES) is an additive to the lube oil which
+            renders mechanical surfaces even smoother and less friction without
+            depositing a film. LES is suitable for engines, compressors and
+            equipment using gears and bearings. LES saves fuel oil, lubricating
+            oil and also improve upon emissions.
+          </span>
+          <span>
+            It is very important that the mechanical surface has no film
+            deposited upon it, but consists instead of a highly-polished metal.
+          </span>
+
+          <span>
+            The engine requires treatment only once and additional treatment is
+            not required, except when replacing major components, such as the
+            pistons or cylinder liners or changing oil. In the case of oil
+            change extra 10% of initial quantity LES should be added.
+          </span>
+          <span
+            >The treatment is effective for two- and four-stroke diesel engines,
+            compressors, hydraulic systems and gearboxes, as well as in
+            equipment with rolling and plain bearings.</span
+          >
+          <strong
+            >LES offers a projected payback period of less than one year</strong
+          >
+        </p>
+      </div>
+
+      <div class="benefits container m-bottom_100">
+        <h3 class="benefits_title text_title_subtitle m-bottom_70">
+          The benefits of using this additive include
+        </h3>
+        <div class="benefit_cards">
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Diesel engine mechanical efficiency improvements led to a
+              reduction in fuel consumption of about 2–3%
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              10% increase in cylinder compression, which reduced wear and
+              prolonged component life
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Decreased friction-related heat, vibration and engine noise.
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              10% reduction in oil consumption - Increased the lifespan of
+              transmission oils by four times while doubling that of engine
+              oils.
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              30% less combustion deposits in the cylinders
+            </p>
+          </div>
+          <div class="benefit_card border_3">
+            <p class="benefit_sub text_characters color_white">
+              Allows for minimal cylinder lining and piston ring wear, even when
+              using fuel oil free of sulfur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg_color_black">
+      <div class="footer container">
+        <div class="footer-top">
+          <div class="phone">
+            <img src="img/ph_phone-light.svg" alt="phone" />
+            <a
+              href="tel:+4408703167797"
+              class="phone_sub text_subtitle color_white visible_0"
+            >
+              +44 (0) 870-316-7797
+            </a>
+          </div>
+          <div class="footer_logo">
+            <img src="img/logo.png" alt="Logo" class="logo_img" />
+            <p class="waranty color_white text_footer">
+              Copyright 2010 Akrit Engineering
+            </p>
+          </div>
+          <div class="email">
+            <img src="img/pepicons-pencil_letter.svg" alt="email" />
+            <a
+              href="mailto:info@akritengineering.com"
+              class="email_sub text_subtitle color_white visible_0"
+            >
+              info@akritengineering.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script/basic.js"></script>
+  </body>
+</html>

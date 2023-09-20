@@ -1,0 +1,48 @@
+.contacts_block {
+  padding: 80px 0px;
+}
+.contacts_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts_offer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.offer_subtitle {
+  max-width: 400px;
+}
+.contacts_img {
+  max-width: 600px;
+}
+.location {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.location img {
+  object-fit: contain;
+}
+.location_sub {
+  font-weight: 600;
+  max-width: 300px;
+}
+.location_sub {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .contacts_container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: flex-start;
+  }
+  .contacts_img {
+    max-width: 320px;
+  }
+}
